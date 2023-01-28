@@ -3,3 +3,5 @@ description: documentation
 theme: just-the-docs
 url: https://syklo-docs.github.io/apidocs
 color_scheme: dark
+logo: "/assets/images/logo.png"
+favicon_ico: "/assets/images/favicon.svg"
