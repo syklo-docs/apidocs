@@ -6,7 +6,8 @@ nav_order: 2
 
 # General API Information
 
-- The base endpoint is: `https://public-api.syklo.io/`
+- The base endpoint is:
+`https://public-api.syklo.io/`
 - All endpoints return either a JSON object or array.
 - Data is returned in ascending order. Oldest first, newest last.
 - All time and timestamp related fields are in milliseconds.
