@@ -50,7 +50,7 @@ Response
 ]
 ```
 
-## Price Ticker
+## Ticker prices
 
 `GET /analytics/apiv1/ticker`
 
@@ -82,7 +82,7 @@ Response
 ]
 ```
 
-## 24hr Ticker Price Change Statistics
+## 24hr ticker price change statistics
 
 `GET /analytics/apiv1/ticker24h`
 
@@ -124,7 +124,7 @@ Response
 ]
 ```
 
-## Order Book
+## Order book
 
 `GET /analytics/apiv1/depth`
 
@@ -182,7 +182,7 @@ Response
 ]
 ```
 
-## Recent Trades List
+## Recent trades
 
 `GET /analytics/apiv1/trades`
 
