@@ -6,10 +6,7 @@ nav_order: 2
 
 # General API Information
 
-- The base endpoint is:
-
-`https://public-api.syklo.io/`
-
+- The base endpoint is: `https://public-api.syklo.io/`
 - All endpoints return either a JSON object or array.
 - Unix timestamps are in milliseconds.
 - Any endpoint can return an ERROR. The error payload is as follows:
