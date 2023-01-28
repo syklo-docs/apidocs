@@ -70,13 +70,13 @@ Response
       ]
    },
    {
-      "symbol":"USDC_VES",
-      "method":"VES:VE:null:Banesco",
-      "last_timestamp":1674865378539,
+      "symbol":"USDC_ARS",
+      "method":"ARS:AR:null:Mercado Pago",
+      "last_timestamp":1674882195700,
       "prices":[
-         23.005,
-         23.005,
-         23.6
+         354,
+         364.2,
+         354
       ]
    }
 ]
