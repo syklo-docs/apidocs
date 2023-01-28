@@ -158,29 +158,25 @@ Response
 ]
 ```
 
-## Maker stats
+## 7 day rolling maker statistics
 
 `GET /analytics/apiv1/makerstats`
 
 Response
 ```js
-// "stats":[to_accept, accepted, to_disburse, disbursed]
-[
+// "wstats":[to_accept, accepted, to_disburse, disbursed]
+[  
    {
-      "symbol":"USDC_ARS",
-      "method":"ARS:AR:null:Bank",
-      "trades":[
-         [594633,1674828916625,364,5],
-         [594782,1674829346205,363.3,-5]
-      ]
+      "maker_id":1619,
+      "wstats":[62,58,52,50]
    },
    {
-      "symbol":"USDC_VES",
-      "method":"VES:VE:null:Mobile payment",
-      "trades":[
-         [597368,1674855446461,23.43,5],
-         [597511,1674859147052,23,-6.3]
-      ]
+      "maker_id":4260,
+      "wstats":[7,6,6,6]
+   },
+   {
+      "maker_id":2260,
+      "wstats":[5,3,3,3]
    }
 ]
 ```
