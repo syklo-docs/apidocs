@@ -10,6 +10,6 @@ For questions or suggestions please send an email to support@syklo.io
 
 ----
 
-<3 from the metaverse
+With <3 from the metaverse
 
 [Syklo.io]: https://syklo.io/
