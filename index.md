@@ -5,7 +5,7 @@ layout: home
 
 This is the [Syklo.io] API documentation. 
 
-For questions or suggestions please send an email to support@syklo.io
+For questions or suggestions please contact support@syklo.io
 
 
 ----
