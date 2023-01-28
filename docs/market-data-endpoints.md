@@ -104,7 +104,7 @@ Response
 
 Response
 ```js
-// "bids"||"asks":[order_id, maker_id, price, min_transaction, max_transaction]
+// "bids"||"asks":[order_id, maker_id, price, min_amount, max_amount]
 [
    {
       "symbol":"USDC_USD",
@@ -137,7 +137,34 @@ Response
 
 Response
 ```js
-// "trades":[order_id, timestamp, price, taker_base_volume]
+// "trades":[order_id, timestamp, price, taker_base_amount]
+[
+   {
+      "symbol":"USDC_ARS",
+      "method":"ARS:AR:null:Bank",
+      "trades":[
+         [594633,1674828916625,364,5],
+         [594782,1674829346205,363.3,-5]
+      ]
+   },
+   {
+      "symbol":"USDC_VES",
+      "method":"VES:VE:null:Mobile payment",
+      "trades":[
+         [597368,1674855446461,23.43,5],
+         [597511,1674859147052,23,-6.3]
+      ]
+   }
+]
+```
+
+## Maker stats
+
+`GET /analytics/apiv1/makerstats`
+
+Response
+```js
+// "stats":[to_accept, accepted, to_disburse, disbursed]
 [
    {
       "symbol":"USDC_ARS",
