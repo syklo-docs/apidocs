@@ -19,7 +19,7 @@ nav_order: 3
 ---
 
 
-## List all assets and methods
+## List of all assets and methods
 
 `GET /analytics/apiv1/allassets`
 

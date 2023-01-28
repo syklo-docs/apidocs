@@ -6,7 +6,7 @@ nav_order: 2
 
 # General API Information
 
-- The base endpoint is: https://public-api.syklo.io/
+- The base endpoint is: `https://public-api.syklo.io/`
 - All endpoints return either a JSON object or array.
 - Data is returned in ascending order. Oldest first, newest last.
 - All time and timestamp related fields are in milliseconds.
@@ -14,8 +14,7 @@ nav_order: 2
 - HTTP 429 return code is used when breaking a request rate limit.
 - HTTP 418 return code is used when an IP has been auto-banned for continuing to send requests after receiving 429 codes.
 - HTTP 5XX return codes are used for internal errors; the issue is on Binance's side. It is important to NOT treat this as a failure operation; the execution status is UNKNOWN and could have been a success.
-- Any endpoint can return an ERROR.
-The error payload is as follows:
+- Any endpoint can return an ERROR. The error payload is as follows:
 ```js
 {
    "error":"TypeError: Cannot read property 'trim' of undefined"
