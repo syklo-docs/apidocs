@@ -57,19 +57,26 @@ Response
 Response
 
 ```js
+// aggregates by symbol are presented first, with null methods
 // "prices":[last_price, bid_price, ask_price]
 [
    {
       "symbol":"USDC_ARS",
-      "method":"ARS:AR:null:Bank",
-      "last_timestamp":1674867900877,
-      "prices":[364.2,364.2,363.8]
+      "method":null,
+      "last_timestamp":1675048314681,
+      "prices":[361.5,361.8,368.9]
    },
    {
       "symbol":"USDC_ARS",
-      "method":"ARS:AR:null:Mercado Pago",
-      "last_timestamp":1674882195700,
-      "prices":[354,364.2,354]
+      "method":"ARS:AR:null:Bank",
+      "last_timestamp":1675048314681,
+      "prices":[361,361,368.9]
+   },
+   {
+      "symbol":"USDC_USD",
+      "method":"USD:ALL:null:Mony",
+      "last_timestamp":1675042255145,
+      "prices":[1.018,null,1.018]
    }
 ]
 ```
@@ -81,19 +88,26 @@ Response
 Response
 
 ```js
+// aggregates by symbol are presented first, with null methods
 // "stats":[open, high, low, close, base_volume, quote_volume, trades, price_change_pct]
 [
    {
-      "symbol":"USDC_ARS",
-      "method":"ARS:AR:null:Bank",
-      "last_timestamp":"1674867900877",
-      "stats":[364.1,364.2,363.2,364.2,107,38940.2,9,0.0003]
+      "symbol":"USDC_COP",
+      "method":null,
+      "last_timestamp":"1675049087193",
+      "stats":[4530,4540,4425,4508,294.29,1306938.7,15,-0.0049]
    },
    {
-      "symbol":"USDC_VES",
-      "method":"VES:VE:null:Mobile payment",
-      "last_timestamp":"1674879023734",
-      "stats":[22.75,23.498,22.76,23.05,1781.81,41179.35152,123,0.0132]
+      "symbol":"USDC_COP",
+      "method":"COP:CO:null:Bancolombia",
+      "last_timestamp":"1675036349730",
+      "stats":[4530,4450,4430,4450,102,453500,2,-0.0177]
+   },
+   {
+      "symbol":"USDC_COP",
+      "method":"COP:CO:null:Nequi",
+      "last_timestamp":"1675049087193",
+      "stats":[4426,4540,4425,4508,192.29,853438.7,13,0.0185]
    }
 ]
 ```
