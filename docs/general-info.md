@@ -7,6 +7,7 @@ nav_order: 2
 # General API Information
 
 - The base endpoint is: `https://public-api.syklo.io/`
+- Data is updated every 5 minutes.
 - All endpoints return either a JSON object or array.
 - Unix timestamps are in milliseconds.
 - Any endpoint can return an ERROR. The error payload is as follows:
@@ -15,10 +16,6 @@ nav_order: 2
    "error":"TypeError: Cannot read property 'trim' of undefined"
 }
 ```
-- Specific error codes and messages defined in Error Codes.
-- For GET endpoints, parameters must be sent as a query string.
-- Parameters may be sent in any order.
-- If a parameter sent in both the query string and request body, the query string parameter will be used.
 
 # LIMITS
 
