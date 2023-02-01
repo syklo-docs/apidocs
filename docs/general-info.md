@@ -24,7 +24,3 @@ nav_order: 2
 - Repeatedly violating rate limits and/or failing to back off after receiving 429 will result in an automated IP ban (http status 418).
 - IP bans are tracked and scale in duration for repeat offenders, from 2 minutes to 3 days.
 - A Retry-After header is sent with a 418 or 429 responses and will give the number of seconds required to wait, in the case of a 418, to prevent a ban, or, in the case of a 429, until the ban is over.
-
-# Endpoint Security Type
-
-- Each endpoint has a security type that determines the how you will interact with it.
