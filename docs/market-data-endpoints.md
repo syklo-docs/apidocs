@@ -26,26 +26,18 @@ nav_order: 3
 Response
 
 ```js
-// "methods":["currency:country:category:name"]
 [
    {
-      "asset":"ARS",
-      "name":"Argentine Peso",
-      "methods":[
-         "ARS:AR:null:Money Gram",
-         "ARS:AR:null:Uala Cash",
-         "ARS:AR:null:Bank",
-         "ARS:AR:null:Mercado Pago",
-         "ARS:AR:null:Uala Transfer",
-         "ARS:AR:null:Lemon Cash"
-      ]
+      "method":"USDT:ALL:null:Arbitrum",
+      "asset":"Tether (USDT)",
+      "image":"https://bafybeihcpgisft47slhi7ztutu2kc55aafu3txphfbmzeyt35cc2fknnhi.ipfs.w3s.link/Arbitrum.png",
+      "image2":null
    },
    {
-      "asset":"AUD",
-      "name":"Australian Dollar",
-      "methods":[
-         null
-      ]
+      "method":"USDC:ALL:null:AVAX C-Chain",
+      "asset":"USD Coin (USDC)",
+      "image":"https://bafybeigpuxot6dcnwwv7u7hkee3cjrbcuf3ruqnpsilyaopucmc4pnzdje.ipfs.w3s.link/AVAX%20C-Chain.png",
+      "image2":null
    }
 ]
 ```
