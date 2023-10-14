@@ -56,22 +56,16 @@ Response
       "method":null,
       "last_timestamp":1675048314681,
       "prices":[
-         361.5, // last price
-         361.8, // bid price
-         368.9 // ask price
+         361.5,   // last price
+         361.8,   // bid price
+         368.9    // ask price
          ]
    },
    {
       "symbol":"USDC_ARS",
-      "method":"ARS:AR:null:Bank",
+      "method":"ARS:🇦🇷:BN:Banco",
       "last_timestamp":1675048314681,
       "prices":[361,361,368.9]
-   },
-   {
-      "symbol":"USDC_USD",
-      "method":"USD:ALL:null:Mony",
-      "last_timestamp":1675042255145,
-      "prices":[1.018,null,1.018]
    }
 ]
 ```
@@ -84,23 +78,31 @@ Response
 
 ```js
 // aggregates by symbol are presented first, with null methods
-// "stats":[open, high, low, close, base_volume, quote_volume, trades, price_change_pct]
 [
    {
       "symbol":"USDC_COP",
       "method":null,
       "last_timestamp":"1675049087193",
-      "stats":[4530,4540,4425,4508,294.29,1306938.7,15,-0.0049]
+      "stats":[
+         4530,       // open
+         4540,       // high
+         4425,       // low
+         4508,       // close
+         294.29,     // base volume
+         1306938.7,  // quote volume
+         15,         // trades
+         -0.0049     // price change percent
+         ]
    },
    {
       "symbol":"USDC_COP",
-      "method":"COP:CO:null:Bancolombia",
+      "method":"COP:🇨🇴:COBN7:Bancolombia",
       "last_timestamp":"1675036349730",
       "stats":[4530,4450,4430,4450,102,453500,2,-0.0177]
    },
    {
       "symbol":"USDC_COP",
-      "method":"COP:CO:null:Nequi",
+      "method":"COP:🇨🇴:NEQ:Nequi",
       "last_timestamp":"1675049087193",
       "stats":[4426,4540,4425,4508,192.29,853438.7,13,0.0185]
    }
@@ -113,14 +115,19 @@ Response
 
 Response
 ```js
-// "bids"||"asks":[order_id, maker_id, price, min_amount, max_amount]
 [
    {
       "symbol":"USDC_USD",
-      "method":"USD:ALL:null:Advcash",
+      "method":"USD:🌐:ADV:Advcash",
       "last_timestamp":1674899191286,
       "bids":[
-         [578721,4260,0.98,10.2,2551.02]
+         [
+            578721,  // order id
+            4260,    // user id
+            0.98,    // price
+            10.2,    // min amount
+            2551.02  // max amount
+         ]
       ],
       "asks":[
          [578727,4260,1.02,1,100],
@@ -129,7 +136,7 @@ Response
    },
    {
       "symbol":"USDC_VES",
-      "method":"VES:VE:null:Mobile payment",
+      "method":"VES:🇻🇪:PF:Pago móvil",
       "last_timestamp":1674871135343,
       "bids":[
          [566270,3869,21.3,14.08,39.91],
@@ -151,15 +158,25 @@ Response
 [
    {
       "symbol":"USDC_ARS",
-      "method":"ARS:AR:null:Bank",
+      "method":"ARS:🇦🇷:BN:Banco",
       "trades":[
-         [594633,1674828916625,364,5],
-         [594782,1674829346205,363.3,-5]
+         [
+            594633,        // transaction id
+            1674828916625, // timestamp
+            364,           // price
+            5              // base amount (taker buy)
+         ],
+         [
+            594782,        // transaction id
+            1674829346205, // timestamp
+            363.3,         // price
+            -5             // base amount (taker sell)
+         ]
       ]
    },
    {
       "symbol":"USDC_VES",
-      "method":"VES:VE:null:Mobile payment",
+      "method":"VES:🇻🇪:PF:Pago móvil",
       "trades":[
          [597368,1674855446461,23.43,5],
          [597511,1674859147052,23,-6.3]
@@ -177,16 +194,23 @@ Response
 // "wstats":[to_accept, accepted, to_disburse, disbursed]
 [  
    {
-      "maker_id":1619,
-      "wstats":[62,58,52,50]
+      "user_id":1619,
+      "user_name":"cdhackers.BIAVGM",
+      "wstats":[
+         101,  // to accept
+         97,   // accepted
+         94,   // to disburse
+         92,   // disbursed
+         120,  // median time (seconds)
+         0     // disputes lost
+      ],
+      "blocked_users":[null]
    },
    {
       "maker_id":4260,
-      "wstats":[7,6,6,6]
-   },
-   {
-      "maker_id":2260,
-      "wstats":[5,3,3,3]
+      "user_name":"Paulito.QL6MCP",
+      "wstats":[58,51,45,45,134,0],
+      "blocked_users":[null]
    }
 ]
 ```
