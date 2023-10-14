@@ -49,7 +49,7 @@ Response
 Response
 
 ```js
-// aggregates by symbol are presented first, with null methods
+// Aggregates by symbol are presented first, with null methods
 [
    {
       "symbol":"USDC_ARS",
@@ -77,7 +77,7 @@ Response
 Response
 
 ```js
-// aggregates by symbol are presented first, with null methods
+// Aggregates by symbol are presented first, with null methods
 [
    {
       "symbol":"USDC_COP",
@@ -122,16 +122,16 @@ Response
       "last_timestamp":1674899191286,
       "bids":[
          [
-            578721,  // order id
-            4260,    // user id
+            6940,    // order_id
+            4260,    // user_id
             0.98,    // price
             10.2,    // min amount
             2551.02  // max amount
          ]
       ],
       "asks":[
-         [578727,4260,1.02,1,100],
-         [599582,1619,1.015,1,50]
+         [52060,4260,1.02,1,100],
+         [59958,1619,1.015,1,50]
       ]
    },
    {
@@ -139,8 +139,8 @@ Response
       "method":"VES:🇻🇪:PF:Pago móvil",
       "last_timestamp":1674871135343,
       "bids":[
-         [566270,3869,21.3,14.08,39.91],
-         [598974,2260,22.55,1,305.1]
+         [56627,3869,21.3,14.08,39.91],
+         [59897,2260,22.55,1,305.1]
       ],
       "asks":null
    }
@@ -159,13 +159,13 @@ Response
       "method":"ARS:🇦🇷:BN:Banco",
       "trades":[
          [
-            594633,        // transaction id
+            594633,        // trx_id
             1674828916625, // timestamp
             364,           // price
             5              // base amount (taker buy)
          ],
          [
-            594782,        // transaction id
+            594782,        // trx_id
             1674829346205, // timestamp
             363.3,         // price
             -5             // base amount (taker sell)
@@ -204,7 +204,7 @@ Response
       "blocked_users":[null]
    },
    {
-      "maker_id":4260,
+      "user_id":4260,
       "user_name":"Paulito.QL6MCP",
       "wstats":[58,51,45,45,134,0],
       "blocked_users":[null]
