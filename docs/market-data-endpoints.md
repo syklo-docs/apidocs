@@ -31,7 +31,7 @@ Response
       "method":"USDT:ALL:null:Arbitrum",
       "asset":"Tether (USDT)",
       "image":"https://bafybeihcpgisft47slhi7ztutu2kc55aafu3txphfbmzeyt35cc2fknnhi.ipfs.w3s.link/Arbitrum.png",
-      "image2":null
+      "image2":"https://bafybeihcpgisft47slhi7ztutu2kc55aafu3txphfbmzeyt35cc2fknnhi.ipfs.dweb.link/Arbitrum.png"
    },
    {
       "method":"USDC:ALL:null:AVAX C-Chain",
@@ -50,13 +50,16 @@ Response
 
 ```js
 // aggregates by symbol are presented first, with null methods
-// "prices":[last_price, bid_price, ask_price]
 [
    {
       "symbol":"USDC_ARS",
       "method":null,
       "last_timestamp":1675048314681,
-      "prices":[361.5,361.8,368.9]
+      "prices":[
+         361.5, // last price
+         361.8, // bid price
+         368.9 // ask price
+         ]
    },
    {
       "symbol":"USDC_ARS",
