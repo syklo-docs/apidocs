@@ -153,8 +153,6 @@ Response
 
 Response
 ```js
-// "trades":[order_id, timestamp, price, taker_base_amount]
-// taker_base_amount: positive::taker_buy, negative::taker_sell
 [
    {
       "symbol":"USDC_ARS",
@@ -191,7 +189,6 @@ Response
 
 Response
 ```js
-// "wstats":[to_accept, accepted, to_disburse, disbursed]
 [  
    {
       "user_id":1619,
