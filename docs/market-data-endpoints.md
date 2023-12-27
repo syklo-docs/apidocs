@@ -28,16 +28,14 @@ Response
 ```js
 [
    {
-      "method":"USDT:ALL:null:Arbitrum",
+      "method":"USDT:🌐:C07:Red Arbitrum",
       "asset":"Tether (USDT)",
-      "image":"https://bafybeihcpgisft47slhi7ztutu2kc55aafu3txphfbmzeyt35cc2fknnhi.ipfs.w3s.link/Arbitrum.png",
-      "image2":"https://bafybeihcpgisft47slhi7ztutu2kc55aafu3txphfbmzeyt35cc2fknnhi.ipfs.dweb.link/Arbitrum.png"
+      "image":"https://bafybeihcpgisft47slhi7ztutu2kc55aafu3txphfbmzeyt35cc2fknnhi.ipfs.w3s.link/Arbitrum.png"
    },
    {
-      "method":"USDC:ALL:null:AVAX C-Chain",
+      "method":"USDC:🌐:C11:Red AVAX C-Chain",
       "asset":"USD Coin (USDC)",
-      "image":"https://bafybeigpuxot6dcnwwv7u7hkee3cjrbcuf3ruqnpsilyaopucmc4pnzdje.ipfs.w3s.link/AVAX%20C-Chain.png",
-      "image2":null
+      "image":"https://bafybeigpuxot6dcnwwv7u7hkee3cjrbcuf3ruqnpsilyaopucmc4pnzdje.ipfs.w3s.link/AVAX%20C-Chain.png"
    }
 ]
 ```
