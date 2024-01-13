@@ -151,22 +151,28 @@ Response
 
 Response
 ```js
+/*
+status = {
+   0: "waiting",
+   1: "maker_accepted",
+   2: "buyer_confirmed",
+   3: "seller_confirmed",
+   4: "buyer_confirmed2"
+}
+*/
 [
    {
       "symbol":"USDC_ARS",
-      "method":"ARS:🇦🇷:BN:Banco",
+      "method":"ARS:🇦🇷:MP:Mercado Pago",
       "trades":[
          [
-            594633,        // trx_id
-            1674828916625, // timestamp
-            364,           // price
-            5              // base amount (taker buy)
-         ],
-         [
-            594782,        // trx_id
-            1674829346205, // timestamp
-            363.3,         // price
-            -5             // base amount (taker sell)
+            2624431,       // trx_id
+            45829,         // maker_id
+            10807,         // taker_id
+            4,             // status
+            1705112414155, // timestmap
+            -50            // taker base amount
+            55550,         // taker quote amount
          ]
       ]
    },
@@ -174,8 +180,8 @@ Response
       "symbol":"USDC_VES",
       "method":"VES:🇻🇪:PF:Pago móvil",
       "trades":[
-         [597368,1674855446461,23.43,5],
-         [597511,1674859147052,23,-6.3]
+         [2624398,45010,29080,4,1705111571881,1.25,-48.11],
+         [2624371,45010,36600,4,1705111849743,1,-38.49]
       ]
    }
 ]
